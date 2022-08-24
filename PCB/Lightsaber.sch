@@ -1,0 +1,227 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR02
+U 1 1 63064B59
+P 10150 950
+F 0 "#PWR02" H 10150 800 50  0001 C CNN
+F 1 "+5V" H 10165 1123 50  0000 C CNN
+F 2 "" H 10150 950 50  0001 C CNN
+F 3 "" H 10150 950 50  0001 C CNN
+	1    10150 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 63065497
+P 10150 2250
+F 0 "#PWR03" H 10150 2000 50  0001 C CNN
+F 1 "GND" H 10155 2077 50  0000 C CNN
+F 2 "" H 10150 2250 50  0001 C CNN
+F 3 "" H 10150 2250 50  0001 C CNN
+	1    10150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lightsaber_custom:SS8050 Q1
+U 1 1 6306A4AC
+P 9500 1400
+F 0 "Q1" H 9200 850 50  0000 L CNN
+F 1 "SS8050" H 9150 750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9500 1400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811052004_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SS8050_C2150.pdf" H 9500 1400 50  0001 C CNN
+	1    9500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 63070970
+P 9300 1700
+F 0 "R1" H 9230 1654 50  0000 R CNN
+F 1 "1K" H 9230 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9230 1700 50  0001 C CNN
+F 3 "~" H 9300 1700 50  0001 C CNN
+	1    9300 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_ARGB D2
+U 1 1 6307339A
+P 10150 1150
+F 0 "D2" V 10196 820 50  0000 R CNN
+F 1 "LED_ARGB" V 10105 820 50  0000 R CNN
+F 2 "" H 10150 1100 50  0001 C CNN
+F 3 "~" H 10150 1100 50  0001 C CNN
+	1    10150 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Lightsaber_custom:SS8050 Q2
+U 1 1 63077BCE
+P 10050 1400
+F 0 "Q2" H 9800 850 50  0000 L CNN
+F 1 "SS8050" H 9750 750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10050 1400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811052004_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SS8050_C2150.pdf" H 10050 1400 50  0001 C CNN
+	1    10050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 63077BD5
+P 9850 1700
+F 0 "R2" H 9780 1654 50  0000 R CNN
+F 1 "1K" H 9780 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9780 1700 50  0001 C CNN
+F 3 "~" H 9850 1700 50  0001 C CNN
+	1    9850 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Lightsaber_custom:SS8050 Q3
+U 1 1 630792B2
+P 10550 1400
+F 0 "Q3" H 10300 850 50  0000 L CNN
+F 1 "SS8050" H 10250 750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10550 1400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811052004_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SS8050_C2150.pdf" H 10550 1400 50  0001 C CNN
+	1    10550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 630792B9
+P 10350 1700
+F 0 "R3" H 10280 1654 50  0000 R CNN
+F 1 "1K" H 10280 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10280 1700 50  0001 C CNN
+F 3 "~" H 10350 1700 50  0001 C CNN
+	1    10350 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10350 1350 10650 1350
+Wire Wire Line
+	10650 1350 10650 1700
+Wire Wire Line
+	10150 1350 10150 1700
+Wire Wire Line
+	9950 1350 9600 1350
+Wire Wire Line
+	9600 1350 9600 1700
+Text GLabel 9300 1550 1    50   Input ~ 0
+R
+Text GLabel 9850 1550 1    50   Input ~ 0
+G
+Text GLabel 10350 1550 1    50   Input ~ 0
+B
+Wire Wire Line
+	10150 2250 10150 2200
+Wire Wire Line
+	10150 2200 9600 2200
+Wire Wire Line
+	9600 2200 9600 2100
+Wire Wire Line
+	10150 2200 10150 2100
+Wire Wire Line
+	10150 2200 10650 2200
+Wire Wire Line
+	10650 2200 10650 2100
+Connection ~ 10150 2200
+Wire Wire Line
+	9300 1900 9300 1850
+Wire Wire Line
+	9850 1900 9850 1850
+Wire Wire Line
+	10350 1900 10350 1850
+$Comp
+L Device:LED D1
+U 1 1 6308C2DF
+P 9800 3550
+F 0 "D1" V 9839 3432 50  0000 R CNN
+F 1 "LED" V 9748 3432 50  0000 R CNN
+F 2 "" H 9800 3550 50  0001 C CNN
+F 3 "~" H 9800 3550 50  0001 C CNN
+	1    9800 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6308D961
+P 10300 3500
+F 0 "SW1" V 10346 3452 50  0000 R CNN
+F 1 "SW_Push" V 10255 3452 50  0000 R CNN
+F 2 "" H 10300 3700 50  0001 C CNN
+F 3 "~" H 10300 3700 50  0001 C CNN
+	1    10300 3500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9800 3250 1    50   Input ~ 0
+BTN_LED
+$Comp
+L Device:R R4
+U 1 1 6308F9F2
+P 10300 3100
+F 0 "R4" H 10370 3146 50  0000 L CNN
+F 1 "10K" H 10370 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10230 3100 50  0001 C CNN
+F 3 "~" H 10300 3100 50  0001 C CNN
+	1    10300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 6309006C
+P 10300 2950
+F 0 "#PWR04" H 10300 2800 50  0001 C CNN
+F 1 "+5V" H 10315 3123 50  0000 C CNN
+F 2 "" H 10300 2950 50  0001 C CNN
+F 3 "" H 10300 2950 50  0001 C CNN
+	1    10300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 3250 10300 3300
+Text GLabel 10500 3300 2    50   Input ~ 0
+BTN_SENS
+Wire Wire Line
+	10500 3300 10300 3300
+Connection ~ 10300 3300
+$Comp
+L power:GND #PWR01
+U 1 1 63091014
+P 10050 3850
+F 0 "#PWR01" H 10050 3600 50  0001 C CNN
+F 1 "GND" H 10055 3677 50  0000 C CNN
+F 2 "" H 10050 3850 50  0001 C CNN
+F 3 "" H 10050 3850 50  0001 C CNN
+	1    10050 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3850 10050 3800
+Wire Wire Line
+	10050 3800 9800 3800
+Wire Wire Line
+	9800 3800 9800 3700
+Wire Wire Line
+	10050 3800 10300 3800
+Wire Wire Line
+	10300 3800 10300 3700
+Connection ~ 10050 3800
+Wire Wire Line
+	9800 3250 9800 3400
+$EndSCHEMATC

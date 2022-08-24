@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Lightsaber_custom)(type Legacy)(uri ${KIPRJMOD}/Lightsaber_custom.lib)(options "")(descr ""))
+)
