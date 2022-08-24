@@ -1,39 +1,78 @@
+#define BUTTON_PIN	7
+#define BUTTON_LED	4
 #define RED_PIN     3
 #define GREEN_PIN   5
 #define BLUE_PIN    6
+
+int colorState = 0;
+int buttonState = 1;
+int previousButtonState = 1;
+
 
 void setup() {
 	pinMode(RED_PIN, OUTPUT);
 	pinMode(GREEN_PIN, OUTPUT);
 	pinMode(BLUE_PIN, OUTPUT);
+	pinMode(BUTTON_LED, OUTPUT);
+	pinMode(BUTTON_PIN, INPUT);
 
-	digitalWrite(RED_PIN, LOW);
-	digitalWrite(GREEN_PIN, LOW);
-	digitalWrite(BLUE_PIN, LOW);
+	digitalWrite(RED_PIN, 0);
+	digitalWrite(GREEN_PIN, 0);
+	digitalWrite(BLUE_PIN, 0);
+	digitalWrite(BUTTON_LED, 0);
 }
 
 void loop() {
-	int red_ledstate = 0;
-	int green_ledstate = 0;
-	int blue_ledstate = 0;
 
-	for (size_t i = 0; i < 2; i++)
+	buttonState = digitalRead(BUTTON_PIN);
+	digitalWrite(BUTTON_LED, !buttonState);
+	if ((buttonState == 0) && (buttonState != previousButtonState))
 	{
-		for (size_t j = 0; j < 2; j++)
+		colorState++;
+		if (colorState > 7)
 		{
-			for (size_t k = 0; k < 2; k++)
-			{
-				blue_ledstate = !blue_ledstate;
-				digitalWrite(BLUE_PIN, blue_ledstate);
-				delay(1000);
-			}
-			green_ledstate = !green_ledstate;
-			digitalWrite(GREEN_PIN, green_ledstate);
+			colorState = 0;
 		}
-		red_ledstate = !red_ledstate;
-		digitalWrite(RED_PIN, red_ledstate);
+		
 	}
+	previousButtonState = buttonState;
 	
 
-	
+	switch (colorState)
+	{
+	case 0:
+		setColorRGB(0,0,0);
+		break;
+	case 1:
+		setColorRGB(0,0,1);
+		break;
+	case 2:
+		setColorRGB(0,1,0);
+		break;
+	case 3:
+		setColorRGB(0,1,1);
+		break;
+	case 4:
+		setColorRGB(1,0,0);
+		break;
+	case 5:
+		setColorRGB(1,0,1);
+		break;
+	case 6:
+		setColorRGB(1,1,0);
+		break;
+	case 7:
+		setColorRGB(1,1,1);
+		break;
+	default:
+		setColorRGB(0,0,0);
+		break;
+	}	
+}
+
+
+void setColorRGB(int red, int green, int blue){
+	digitalWrite(RED_PIN, red);
+	digitalWrite(GREEN_PIN, green);
+	digitalWrite(BLUE_PIN, blue);
 }
