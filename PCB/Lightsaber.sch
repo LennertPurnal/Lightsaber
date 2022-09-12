@@ -224,4 +224,63 @@ Wire Wire Line
 Connection ~ 10050 3800
 Wire Wire Line
 	9800 3250 9800 3400
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 631E3320
+P 800 1800
+F 0 "BT?" H 918 1896 50  0000 L CNN
+F 1 "Battery_Cell" H 918 1805 50  0000 L CNN
+F 2 "" V 800 1860 50  0001 C CNN
+F 3 "~" V 800 1860 50  0001 C CNN
+	1    800  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 631E4D50
+P 1200 1550
+F 0 "F?" V 1003 1550 50  0000 C CNN
+F 1 "Fuse" V 1094 1550 50  0000 C CNN
+F 2 "" V 1130 1550 50  0001 C CNN
+F 3 "~" H 1200 1550 50  0001 C CNN
+	1    1200 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	800  1600 800  1550
+Wire Wire Line
+	800  1550 1050 1550
+$Comp
+L Lightsaber_custom:DW01A U?
+U 1 1 631E6E9D
+P 2800 1150
+F 0 "U?" H 2750 1215 50  0000 C CNN
+F 1 "DW01A" H 2750 1124 50  0000 C CNN
+F 2 "" H 2750 1200 50  0001 C CNN
+F 3 "" H 2750 1200 50  0001 C CNN
+	1    2800 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 631E7B9E
+P 1900 1350
+F 0 "R?" V 1693 1350 50  0000 C CNN
+F 1 "100" V 1784 1350 50  0000 C CNN
+F 2 "" V 1830 1350 50  0001 C CNN
+F 3 "~" H 1900 1350 50  0001 C CNN
+	1    1900 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 631E8406
+P 2100 1650
+F 0 "C?" H 2215 1696 50  0000 L CNN
+F 1 "C" H 2215 1605 50  0000 L CNN
+F 2 "" H 2138 1500 50  0001 C CNN
+F 3 "~" H 2100 1650 50  0001 C CNN
+	1    2100 1650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
