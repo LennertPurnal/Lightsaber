@@ -379,8 +379,8 @@ $Comp
 L Battery_Management:MCP73831-2-OT U?
 U 1 1 631F6B34
 P 2600 3400
-F 0 "U?" H 2200 3700 50  0000 C CNN
-F 1 "MCP73831-2-OT" H 2200 3850 50  0000 C CNN
+F 0 "U?" H 2850 3750 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 3050 3900 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2650 3150 50  0001 L CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2450 3350 50  0001 C CNN
 	1    2600 3400
@@ -434,26 +434,22 @@ Wire Wire Line
 	2050 3500 2200 3500
 Wire Wire Line
 	1750 3500 1750 3900
-Wire Wire Line
-	2600 2850 2600 3100
-Wire Wire Line
-	1750 3200 1750 2850
 $Comp
 L power:+BATT #PWR?
 U 1 1 6320727D
-P 3400 3200
-F 0 "#PWR?" H 3400 3050 50  0001 C CNN
-F 1 "+BATT" H 3450 3250 50  0000 L CNN
-F 2 "" H 3400 3200 50  0001 C CNN
-F 3 "" H 3400 3200 50  0001 C CNN
-	1    3400 3200
+P 3250 3200
+F 0 "#PWR?" H 3250 3050 50  0001 C CNN
+F 1 "+BATT" H 3300 3250 50  0000 L CNN
+F 2 "" H 3250 3200 50  0001 C CNN
+F 3 "" H 3250 3200 50  0001 C CNN
+	1    3250 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2600 3950 2600 3900
 Connection ~ 2600 3900
 Wire Wire Line
-	1750 2850 2600 2850
+	1750 2750 2600 2750
 Wire Wire Line
 	1750 3900 2050 3900
 $Comp
@@ -470,10 +466,8 @@ $EndComp
 Wire Wire Line
 	1350 3250 1400 3250
 Wire Wire Line
-	1400 3250 1400 2850
-Wire Wire Line
-	1400 2850 1750 2850
-Connection ~ 1750 2850
+	1400 2750 1750 2750
+Connection ~ 1750 2750
 Wire Wire Line
 	1350 3450 1400 3450
 Wire Wire Line
@@ -482,31 +476,27 @@ Wire Wire Line
 	1400 3900 1750 3900
 Connection ~ 1750 3900
 Wire Wire Line
-	3400 3750 3400 3900
+	3250 3750 3250 3900
 Wire Wire Line
-	3400 3200 3400 3300
-Connection ~ 3400 3300
+	3250 3200 3250 3300
+Connection ~ 3250 3300
 Wire Wire Line
-	3400 3300 3400 3450
-Text GLabel 3000 3500 2    50   Input ~ 0
+	3250 3300 3250 3450
+Text GLabel 3050 3550 3    50   Input ~ 0
 STAT
 $Comp
 L Device:C C?
 U 1 1 63203FE4
-P 3400 3600
-F 0 "C?" H 3515 3646 50  0000 L CNN
-F 1 "4.7u" H 3515 3555 50  0000 L CNN
-F 2 "" H 3438 3450 50  0001 C CNN
-F 3 "~" H 3400 3600 50  0001 C CNN
-	1    3400 3600
+P 3250 3600
+F 0 "C?" H 3365 3646 50  0000 L CNN
+F 1 "4.7u" H 3365 3555 50  0000 L CNN
+F 2 "" H 3288 3450 50  0001 C CNN
+F 3 "~" H 3250 3600 50  0001 C CNN
+	1    3250 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 3300 3400 3300
-Wire Wire Line
-	2600 3900 3400 3900
-Text Notes 4000 2950 0    50   ~ 0
-TODO:\nReverse polarity protection?\nInput select
+Text Notes 800  2600 0    50   ~ 0
+TODO:\nReverse polarity protection?
 $Comp
 L Device:R R?
 U 1 1 6326C0D1
@@ -546,4 +536,73 @@ Wire Wire Line
 	10150 1350 10150 1400
 Wire Wire Line
 	10650 1350 10650 1400
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 63207EF7
+P 4150 3200
+F 0 "Q?" V 4399 3200 50  0000 C CNN
+F 1 "AO3401A" V 4490 3200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4350 3125 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 4150 3200 50  0001 L CNN
+	1    4150 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6320D8B1
+P 3700 2900
+F 0 "R?" V 3493 2900 50  0000 C CNN
+F 1 "10K" V 3584 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3630 2900 50  0001 C CNN
+F 3 "~" H 3700 2900 50  0001 C CNN
+	1    3700 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 2750 4150 2750
+$Comp
+L power:GND #PWR?
+U 1 1 632145C1
+P 3700 3050
+F 0 "#PWR?" H 3700 2800 50  0001 C CNN
+F 1 "GND" H 3705 2877 50  0000 C CNN
+F 2 "" H 3700 3050 50  0001 C CNN
+F 3 "" H 3700 3050 50  0001 C CNN
+	1    3700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2750 1400 3250
+Wire Wire Line
+	1750 2750 1750 3200
+Wire Wire Line
+	2600 2750 2600 3100
+Wire Wire Line
+	4150 2750 4150 3000
+Wire Wire Line
+	3950 3300 3250 3300
+$Comp
+L Device:D_Schottky D?
+U 1 1 63223B80
+P 4700 2750
+F 0 "D?" H 4700 2533 50  0000 C CNN
+F 1 "D_Schottky" H 4700 2624 50  0000 C CNN
+F 2 "" H 4700 2750 50  0001 C CNN
+F 3 "~" H 4700 2750 50  0001 C CNN
+	1    4700 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2750 4150 2750
+Connection ~ 4150 2750
+Wire Wire Line
+	3050 3550 3050 3500
+Wire Wire Line
+	3050 3500 3000 3500
+Wire Wire Line
+	3250 3900 2600 3900
+Wire Wire Line
+	2600 2750 3700 2750
+Connection ~ 2600 2750
+Connection ~ 3700 2750
 $EndSCHEMATC
