@@ -605,4 +605,188 @@ Wire Wire Line
 	2600 2750 3700 2750
 Connection ~ 2600 2750
 Connection ~ 3700 2750
+$Comp
+L Regulator_Switching:MC34063AD U?
+U 1 1 632360AA
+P 5250 3250
+F 0 "U?" H 5250 3250 50  0000 C CNN
+F 1 "MC34063AD" H 5250 3150 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5300 2800 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MC34063A-D.PDF" H 5750 3150 50  0001 C CNN
+	1    5250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3050 4600 3050
+Wire Wire Line
+	4600 3050 4600 3300
+Wire Wire Line
+	4600 3300 4350 3300
+$Comp
+L Device:R R?
+U 1 1 6324142B
+P 5900 3150
+F 0 "R?" V 5693 3150 50  0000 C CNN
+F 1 "180" V 5784 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5830 3150 50  0001 C CNN
+F 3 "~" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 63241E87
+P 6300 3150
+F 0 "L?" V 6119 3150 50  0000 C CNN
+F 1 "L" V 6210 3150 50  0000 C CNN
+F 2 "" H 6300 3150 50  0001 C CNN
+F 3 "~" H 6300 3150 50  0001 C CNN
+	1    6300 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3250 6550 3250
+Wire Wire Line
+	6550 3250 6550 3150
+Wire Wire Line
+	6550 3150 6450 3150
+Wire Wire Line
+	6150 3150 6100 3150
+Wire Wire Line
+	5750 3150 5650 3150
+Wire Wire Line
+	5250 3750 5250 3900
+Wire Wire Line
+	6100 3150 6100 3050
+Wire Wire Line
+	6100 3050 5650 3050
+Connection ~ 6100 3150
+Wire Wire Line
+	6100 3150 6050 3150
+$Comp
+L Device:R R?
+U 1 1 63252DB4
+P 5250 2850
+F 0 "R?" V 5300 3000 50  0000 C CNN
+F 1 "R" V 5250 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5180 2850 50  0001 C CNN
+F 3 "~" H 5250 2850 50  0001 C CNN
+	1    5250 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 3050 6100 2850
+Wire Wire Line
+	6100 2850 5400 2850
+Connection ~ 6100 3050
+Wire Wire Line
+	5100 2850 4850 2850
+Wire Wire Line
+	4850 2850 4850 3050
+Connection ~ 4850 3050
+$Comp
+L Device:C C?
+U 1 1 632593ED
+P 4650 3700
+F 0 "C?" H 4765 3746 50  0000 L CNN
+F 1 "C" H 4765 3655 50  0000 L CNN
+F 2 "" H 4688 3550 50  0001 C CNN
+F 3 "~" H 4650 3700 50  0001 C CNN
+	1    4650 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 3900
+Wire Wire Line
+	4850 3450 4650 3450
+Wire Wire Line
+	4650 3450 4650 3550
+Wire Wire Line
+	5250 3900 4650 3900
+Wire Wire Line
+	4650 3900 4650 3850
+$Comp
+L Device:R R?
+U 1 1 6326F515
+P 5800 3700
+F 0 "R?" V 5593 3700 50  0000 C CNN
+F 1 "10K" V 5684 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5730 3700 50  0001 C CNN
+F 3 "~" H 5800 3700 50  0001 C CNN
+	1    5800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6327EA47
+P 5900 3450
+F 0 "#PWR?" H 5900 3200 50  0001 C CNN
+F 1 "GND" V 5850 3500 50  0000 C CNN
+F 2 "" H 5900 3450 50  0001 C CNN
+F 3 "" H 5900 3450 50  0001 C CNN
+	1    5900 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 3450 5650 3450
+Wire Wire Line
+	5650 3550 5800 3550
+Wire Wire Line
+	5800 3850 5800 3900
+Wire Wire Line
+	5800 3900 5250 3900
+$Comp
+L Device:R R?
+U 1 1 632885DC
+P 6200 3550
+F 0 "R?" V 5993 3550 50  0000 C CNN
+F 1 "27K" V 6084 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6130 3550 50  0001 C CNN
+F 3 "~" H 6200 3550 50  0001 C CNN
+	1    6200 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 3550 5800 3550
+Connection ~ 5800 3550
+$Comp
+L Device:D_Schottky D?
+U 1 1 6328C7F1
+P 6550 3400
+F 0 "D?" V 6596 3320 50  0000 R CNN
+F 1 "D_Schottky" V 6505 3320 50  0000 R CNN
+F 2 "" H 6550 3400 50  0001 C CNN
+F 3 "~" H 6550 3400 50  0001 C CNN
+	1    6550 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6550 3250
+Wire Wire Line
+	6550 3550 6350 3550
+Wire Wire Line
+	4650 3900 3250 3900
+Connection ~ 4650 3900
+Connection ~ 3250 3900
+Wire Wire Line
+	6550 3550 6750 3550
+Wire Wire Line
+	6750 3550 6750 2750
+Connection ~ 6550 3550
+$Comp
+L power:+5V #PWR?
+U 1 1 63297A5F
+P 6750 2700
+F 0 "#PWR?" H 6750 2550 50  0001 C CNN
+F 1 "+5V" H 6765 2873 50  0000 C CNN
+F 2 "" H 6750 2700 50  0001 C CNN
+F 3 "" H 6750 2700 50  0001 C CNN
+	1    6750 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2750 6750 2750
+Connection ~ 6750 2750
+Wire Wire Line
+	6750 2750 6750 2700
+Wire Wire Line
+	3250 3300 3000 3300
 $EndSCHEMATC
