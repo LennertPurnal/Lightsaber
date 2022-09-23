@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Lightsaber_custom)(type Legacy)(uri C:/devWorks/Lightsaber/PCB/Lightsaber_custom.lib)(options "")(descr ""))
+)

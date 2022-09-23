@@ -246,257 +246,12 @@ F 3 "~" H 1350 1550 50  0001 C CNN
 	1    1350 1550
 	-1   0    0    1   
 $EndComp
-$Comp
-L Lightsaber_custom:DW01A U1
-U 1 1 631E6E9D
-P 3000 1150
-F 0 "U1" H 2950 1215 50  0000 C CNN
-F 1 "DW01A" H 2950 1124 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 2950 1200 50  0001 C CNN
-F 3 "" H 2950 1200 50  0001 C CNN
-	1    3000 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 631E7B9E
-P 1750 1350
-F 0 "R5" V 1543 1350 50  0000 C CNN
-F 1 "100" V 1634 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1680 1350 50  0001 C CNN
-F 3 "~" H 1750 1350 50  0001 C CNN
-	1    1750 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 631E8406
-P 2100 1650
-F 0 "C1" H 2215 1696 50  0000 L CNN
-F 1 "C" H 2215 1605 50  0000 L CNN
-F 2 "" H 2138 1500 50  0001 C CNN
-F 3 "~" H 2100 1650 50  0001 C CNN
-	1    2100 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0101
-U 1 1 631F39B5
-P 3650 2200
-F 0 "#PWR0101" H 3650 1950 50  0001 C CNN
-F 1 "GND" H 3655 2027 50  0000 C CNN
-F 2 "" H 3650 2200 50  0001 C CNN
-F 3 "" H 3650 2200 50  0001 C CNN
-	1    3650 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Lightsaber_custom:8205A Q4
-U 1 1 631FA975
-P 3000 1700
-F 0 "Q4" H 2950 1150 50  0000 C CNN
-F 1 "8205A" H 2950 1050 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 3000 1700 50  0001 C CNN
-F 3 "" H 3000 1700 50  0001 C CNN
-	1    3000 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 1800 2850 1900
-Wire Wire Line
-	3100 1800 3100 1900
-Wire Wire Line
-	2500 1550 2350 1550
-Wire Wire Line
-	2350 1550 2350 2150
-Connection ~ 2350 2150
-Wire Wire Line
-	2350 2150 2550 2150
-Wire Wire Line
-	2500 1350 2100 1350
-Wire Wire Line
-	2100 1500 2100 1350
-Connection ~ 2100 1350
-Wire Wire Line
-	2100 1350 1900 1350
-Wire Wire Line
-	2100 1800 2100 2150
-Wire Wire Line
-	2100 2150 2350 2150
-Wire Wire Line
-	1350 1350 1350 1400
 Wire Wire Line
 	1350 1700 1350 1750
 Wire Wire Line
-	1350 1350 1600 1350
-Wire Wire Line
 	1350 2050 1350 2150
-Connection ~ 2100 2150
-Wire Wire Line
-	3650 2200 3650 2150
-Wire Wire Line
-	1350 2150 2100 2150
-$Comp
-L Device:R R6
-U 1 1 6320AF5C
-P 3500 1850
-F 0 "R6" V 3293 1850 50  0000 C CNN
-F 1 "1K" V 3384 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 1850 50  0001 C CNN
-F 3 "~" H 3500 1850 50  0001 C CNN
-	1    3500 1850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3400 2150 3500 2150
-Wire Wire Line
-	3500 2000 3500 2150
-Connection ~ 3500 2150
-Wire Wire Line
-	3500 2150 3650 2150
-Wire Wire Line
-	3500 1700 3500 1550
-Wire Wire Line
-	3500 1550 3400 1550
-NoConn ~ 3400 1350
-Wire Wire Line
-	1350 1350 1350 1000
-Wire Wire Line
-	1350 1000 3650 1000
-Connection ~ 1350 1350
-$Comp
-L power:+BATT #PWR0102
-U 1 1 6321023C
-P 3650 1000
-F 0 "#PWR0102" H 3650 850 50  0001 C CNN
-F 1 "+BATT" V 3665 1128 50  0000 L CNN
-F 2 "" H 3650 1000 50  0001 C CNN
-F 3 "" H 3650 1000 50  0001 C CNN
-	1    3650 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Battery_Management:MCP73831-2-OT U?
-U 1 1 631F6B34
-P 6150 1650
-F 0 "U?" H 6400 2000 50  0000 C CNN
-F 1 "MCP73831-2-OT" H 6600 2150 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6200 1400 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 6000 1600 50  0001 C CNN
-	1    6150 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 632029D9
-P 5600 1950
-F 0 "R?" H 5670 1996 50  0000 L CNN
-F 1 "R" H 5670 1905 50  0000 L CNN
-F 2 "" V 5530 1950 50  0001 C CNN
-F 3 "~" H 5600 1950 50  0001 C CNN
-	1    5600 1950
-	1    0    0    -1  
-$EndComp
-Text Notes 4500 2400 0    50   ~ 0
-Select Rprog to charge at 1C rate\nIcharge=1000V/Rprog
-$Comp
-L Device:C C?
-U 1 1 6320325A
-P 5300 1600
-F 0 "C?" H 5415 1646 50  0000 L CNN
-F 1 "4.7u" H 5415 1555 50  0000 L CNN
-F 2 "" H 5338 1450 50  0001 C CNN
-F 3 "~" H 5300 1600 50  0001 C CNN
-	1    5300 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6320C535
-P 6150 2200
-F 0 "#PWR?" H 6150 1950 50  0001 C CNN
-F 1 "GND" H 6155 2027 50  0000 C CNN
-F 2 "" H 6150 2200 50  0001 C CNN
-F 3 "" H 6150 2200 50  0001 C CNN
-	1    6150 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 2150 6150 1950
-Wire Wire Line
-	5600 2100 5600 2150
-Connection ~ 5600 2150
-Wire Wire Line
-	5600 2150 6150 2150
-Wire Wire Line
-	5600 1800 5600 1750
-Wire Wire Line
-	5600 1750 5750 1750
-Wire Wire Line
-	5300 1750 5300 2150
-$Comp
-L power:+BATT #PWR?
-U 1 1 6320727D
-P 6800 1450
-F 0 "#PWR?" H 6800 1300 50  0001 C CNN
-F 1 "+BATT" H 6850 1500 50  0000 L CNN
-F 2 "" H 6800 1450 50  0001 C CNN
-F 3 "" H 6800 1450 50  0001 C CNN
-	1    6800 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 2200 6150 2150
-Connection ~ 6150 2150
-Wire Wire Line
-	5300 1000 6150 1000
-Wire Wire Line
-	5300 2150 5600 2150
-$Comp
-L Connector:Jack-DC J?
-U 1 1 63238654
-P 4600 1600
-F 0 "J?" H 4657 1925 50  0000 C CNN
-F 1 "Jack-DC" H 4657 1834 50  0000 C CNN
-F 2 "" H 4650 1560 50  0001 C CNN
-F 3 "~" H 4650 1560 50  0001 C CNN
-	1    4600 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 1500 4950 1500
-Wire Wire Line
-	4950 1000 5300 1000
-Connection ~ 5300 1000
-Wire Wire Line
-	4900 1700 4950 1700
-Wire Wire Line
-	4950 1700 4950 2150
-Wire Wire Line
-	4950 2150 5300 2150
-Connection ~ 5300 2150
-Wire Wire Line
-	6800 2000 6800 2150
-Wire Wire Line
-	6800 1450 6800 1550
-Connection ~ 6800 1550
-Wire Wire Line
-	6800 1550 6800 1700
-Text GLabel 6600 1800 3    50   Input ~ 0
-STAT
-$Comp
-L Device:C C?
-U 1 1 63203FE4
-P 6800 1850
-F 0 "C?" H 6915 1896 50  0000 L CNN
-F 1 "4.7u" H 6915 1805 50  0000 L CNN
-F 2 "" H 6838 1700 50  0001 C CNN
-F 3 "~" H 6800 1850 50  0001 C CNN
-	1    6800 1850
-	1    0    0    -1  
-$EndComp
 Text Notes 800  2600 0    50   ~ 0
-TODO:\nReverse polarity protection?
+TODO:\nBattery protection\ncharging\nReverse polarity protection?
 $Comp
 L Device:R R?
 U 1 1 6326C0D1
@@ -537,75 +292,6 @@ Wire Wire Line
 Wire Wire Line
 	9100 3600 9100 3650
 $Comp
-L Transistor_FET:AO3401A Q?
-U 1 1 63207EF7
-P 7700 1450
-F 0 "Q?" V 7949 1450 50  0000 C CNN
-F 1 "AO3401A" V 8040 1450 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7900 1375 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 7700 1450 50  0001 L CNN
-	1    7700 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6320D8B1
-P 7250 1150
-F 0 "R?" V 7043 1150 50  0000 C CNN
-F 1 "10K" V 7134 1150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7180 1150 50  0001 C CNN
-F 3 "~" H 7250 1150 50  0001 C CNN
-	1    7250 1150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7250 1000 7700 1000
-$Comp
-L power:GND #PWR?
-U 1 1 632145C1
-P 7250 1300
-F 0 "#PWR?" H 7250 1050 50  0001 C CNN
-F 1 "GND" H 7255 1127 50  0000 C CNN
-F 2 "" H 7250 1300 50  0001 C CNN
-F 3 "" H 7250 1300 50  0001 C CNN
-	1    7250 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 1000 4950 1500
-Wire Wire Line
-	5300 1000 5300 1450
-Wire Wire Line
-	6150 1000 6150 1350
-Wire Wire Line
-	7700 1000 7700 1250
-Wire Wire Line
-	7500 1550 6800 1550
-$Comp
-L Device:D_Schottky D?
-U 1 1 63223B80
-P 8250 1000
-F 0 "D?" H 8250 783 50  0000 C CNN
-F 1 "D_Schottky" H 8250 874 50  0000 C CNN
-F 2 "" H 8250 1000 50  0001 C CNN
-F 3 "~" H 8250 1000 50  0001 C CNN
-	1    8250 1000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8100 1000 7700 1000
-Connection ~ 7700 1000
-Wire Wire Line
-	6600 1800 6600 1750
-Wire Wire Line
-	6600 1750 6550 1750
-Wire Wire Line
-	6800 2150 6150 2150
-Wire Wire Line
-	6150 1000 7250 1000
-Connection ~ 6150 1000
-Connection ~ 7250 1000
-$Comp
 L Regulator_Switching:MC34063AD U?
 U 1 1 632360AA
 P 8800 1500
@@ -616,12 +302,6 @@ F 3 "http://www.onsemi.com/pub_link/Collateral/MC34063A-D.PDF" H 9300 1400 50  0
 	1    8800 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8400 1300 8150 1300
-Wire Wire Line
-	8150 1300 8150 1550
-Wire Wire Line
-	8150 1550 7900 1550
 $Comp
 L Device:R R?
 U 1 1 6324142B
@@ -683,7 +363,6 @@ Wire Wire Line
 	8650 1100 8400 1100
 Wire Wire Line
 	8400 1100 8400 1300
-Connection ~ 8400 1300
 $Comp
 L Device:C C?
 U 1 1 632593ED
@@ -763,13 +442,7 @@ Connection ~ 10100 1500
 Wire Wire Line
 	10100 1800 9900 1800
 Wire Wire Line
-	8200 2150 6800 2150
-Connection ~ 8200 2150
-Connection ~ 6800 2150
-Wire Wire Line
 	10100 1800 10300 1800
-Wire Wire Line
-	10300 1800 10300 1000
 Connection ~ 10100 1800
 $Comp
 L power:+5V #PWR?
@@ -783,10 +456,137 @@ F 3 "" H 10300 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 1000 10300 1000
-Connection ~ 10300 1000
+	10300 950  10300 1800
 Wire Wire Line
-	10300 1000 10300 950 
+	1350 1000 1350 1350
+$Comp
+L Lightsaber_custom:BQ24232 U?
+U 1 1 6329798E
+P 7100 850
+F 0 "U?" H 6800 900 50  0000 C CNN
+F 1 "BQ24232" H 6750 800 50  0000 C CNN
+F 2 "" H 7100 900 50  0001 C CNN
+F 3 "" H 7100 900 50  0001 C CNN
+	1    7100 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lightsaber_custom:DW01A U?
+U 1 1 632A00F6
+P 3100 1150
+F 0 "U?" H 3050 1215 50  0000 C CNN
+F 1 "DW01A" H 3050 1124 50  0000 C CNN
+F 2 "" H 3050 1200 50  0001 C CNN
+F 3 "" H 3050 1200 50  0001 C CNN
+	1    3100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lightsaber_custom:8205A Q?
+U 1 1 632A1679
+P 3100 1700
+F 0 "Q?" H 3075 1077 50  0000 C CNN
+F 1 "8205A" H 3075 986 50  0000 C CNN
+F 2 "" H 3100 1700 50  0001 C CNN
+F 3 "" H 3100 1700 50  0001 C CNN
+	1    3100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 632A3DC8
+P 1900 1350
+F 0 "R?" V 1693 1350 50  0000 C CNN
+F 1 "100" V 1784 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1830 1350 50  0001 C CNN
+F 3 "~" H 1900 1350 50  0001 C CNN
+	1    1900 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 632A4DBF
+P 2250 1700
+F 0 "C?" H 2365 1746 50  0000 L CNN
+F 1 "C" H 2365 1655 50  0000 L CNN
+F 2 "" H 2288 1550 50  0001 C CNN
+F 3 "~" H 2250 1700 50  0001 C CNN
+	1    2250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 632A5936
+P 3650 1850
+F 0 "R?" H 3580 1804 50  0000 R CNN
+F 1 "1K" H 3580 1895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3580 1850 50  0001 C CNN
+F 3 "~" H 3650 1850 50  0001 C CNN
+	1    3650 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 632A6469
+P 3750 2150
+F 0 "#PWR?" H 3750 1900 50  0001 C CNN
+F 1 "GND" H 3755 1977 50  0000 C CNN
+F 2 "" H 3750 2150 50  0001 C CNN
+F 3 "" H 3750 2150 50  0001 C CNN
+	1    3750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 632A6A8C
+P 3750 1000
+F 0 "#PWR?" H 3750 850 50  0001 C CNN
+F 1 "+BATT" H 3765 1173 50  0000 C CNN
+F 2 "" H 3750 1000 50  0001 C CNN
+F 3 "" H 3750 1000 50  0001 C CNN
+	1    3750 1000
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6800 1550 6550 1550
+	1350 1000 3750 1000
+Wire Wire Line
+	1750 1350 1350 1350
+Connection ~ 1350 1350
+Wire Wire Line
+	1350 1350 1350 1400
+Wire Wire Line
+	3500 2150 3650 2150
+Wire Wire Line
+	3650 2000 3650 2150
+Connection ~ 3650 2150
+Wire Wire Line
+	3650 2150 3750 2150
+Wire Wire Line
+	3650 1700 3650 1550
+Wire Wire Line
+	3650 1550 3500 1550
+NoConn ~ 3500 1350
+Wire Wire Line
+	1350 2150 2250 2150
+Wire Wire Line
+	2050 1350 2250 1350
+Wire Wire Line
+	2250 1550 2250 1350
+Connection ~ 2250 1350
+Wire Wire Line
+	2250 1350 2600 1350
+Wire Wire Line
+	2250 1850 2250 2150
+Connection ~ 2250 2150
+Wire Wire Line
+	2250 2150 2600 2150
+Wire Wire Line
+	2600 1550 2600 2150
+Connection ~ 2600 2150
+Wire Wire Line
+	2600 2150 2650 2150
+Wire Wire Line
+	2950 1900 2950 1800
+Wire Wire Line
+	3200 1800 3200 1900
 $EndSCHEMATC
