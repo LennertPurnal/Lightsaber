@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name Lightsaber_custom)(type Legacy)(uri ${KIPRJMOD}/Lightsaber_custom.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "Lightsaber_custom")(type "KiCad")(uri "${KIPRJMOD}/Lightsaber_custom.kicad_sym")(options "")(descr ""))
 )
