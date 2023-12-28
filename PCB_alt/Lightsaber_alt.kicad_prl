@@ -1,7 +1,11 @@
 {
   "board": {
     "active_layer": 0,
+<<<<<<< HEAD
     "active_layer_preset": "",
+=======
+    "active_layer_preset": "All Layers",
+>>>>>>> e9442a63facfc275599e62234ee29ddacd7dd373
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -14,12 +18,20 @@
       "vias": 1.0,
       "zones": 0.6
     },
+<<<<<<< HEAD
+=======
+    "ratsnest_display_mode": 0,
+>>>>>>> e9442a63facfc275599e62234ee29ddacd7dd373
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
       "graphics": true,
       "keepouts": true,
+<<<<<<< HEAD
       "lockedItems": false,
+=======
+      "lockedItems": true,
+>>>>>>> e9442a63facfc275599e62234ee29ddacd7dd373
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -40,6 +52,10 @@
       11,
       12,
       13,
+<<<<<<< HEAD
+=======
+      14,
+>>>>>>> e9442a63facfc275599e62234ee29ddacd7dd373
       15,
       16,
       17,
@@ -60,9 +76,13 @@
       33,
       34,
       35,
+<<<<<<< HEAD
       36,
       39,
       40
+=======
+      36
+>>>>>>> e9442a63facfc275599e62234ee29ddacd7dd373
     ],
     "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
